@@ -1,0 +1,40 @@
+<section id="add" class="py-5">
+<div class="container">
+    <div class="navbar-light bg-light my-5">
+        <div class="mensaje-perfil">
+            <div class="p-4">
+                <p class="text-dark fw-bold">¿Eres un Instructor?</p>
+                <p class="text-dark fw-bold">Puedes iniciar un en vívo ahora solo llena los datos solicitados</p>
+            </div>
+        </div>
+    </div>
+    <h3 class="fw-bold pt-5">Realiza tu Trasmisión Ahora  <strong> {{ usuario.nombre }}</strong></h3>
+    <div class="row">
+        <div class="col-md-5 mx-auto">
+            <div class="card border-0">
+                <div class="card-body">
+                    <form action="/links/add" method="POST" class="perfil-usuario">
+                        <div class="mb-3">
+                            <label for="streaming" class="fw-bold pb-4">Titulo de tu Streaming</label>
+                            <input type="text" class="form-control" name="titulo" autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <label for="url" class="fw-bold pb-4">URL</label>
+                            <input type="url" name="url" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcion" class="fw-bold pb-4">Descripción</label>
+                            <textarea name="descripcion" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            {{!-- <button class="btn btn-dark form-control">Registrar</button> --}}
+                            <input type="submit" class="btn btn-dark form-control" value="Registrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+

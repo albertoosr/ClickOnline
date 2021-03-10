@@ -1,0 +1,155 @@
+
+    <section class="site-header inicio">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <h1 class="text-white titulo">¿Estas listo para aprender en línea?</h1>
+                  <p class="text-inicio text-white">Click Online te ofrece la manera más sencilla de aprender, 
+                    solo necesitas crear una cuenta, un dispositivo, conexión a internet y es todo, ¿Qué estas esperando?</p>
+                  <a href="#online" class="b-inicio btn-inicio btn btn-danger btn-lg">¡Inscribete Ahora!</a>
+            </div>
+        </div>
+    </section>
+        
+        <section id="recursos" class="secciones">
+            <div class="container">
+                <h2 class="text-center titulos-secciones">¿Qué necesitas para visualizar tus clases?</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img src="./img/sitio-web.svg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Crea una cuenta</h5>
+                          <p class="card-text">Crea una cuenta de forma gratuita, 
+                              disfruta cada una de nuestras clases que tenemos para ti.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="./img/sensible.svg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Dispositivo</h5>
+                          <p class="card-text">Puedes ver tus clases en cualquier dispotivo, 
+                              como un Smarphone, Tablet, Computadora, entre otros.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="./img/wifi.svg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Conexión a Internet</h5>
+                          <p class="card-text">Conecta tu dispotivo a servicio de internet 
+                              ingresa a tu cuenta y podras vizualizar tu clase seleccionado.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="secciones">
+            <div class="container">
+                <h2 class="text-center titulos-secciones">Acerca de Nosotros</h2>
+                <p class="fw-300 info-nosotros">Click Online una plataforma Web utilizando la tecnología 
+                  de streaming con la finalidad de poder ofrecer una manera más sencilla de aprender con 
+                  instructores con mayor capacitación haciendo que los estudiantes tengan una mejor compresión 
+                  de los temas mostrados, lo únicos recursos que son importantes es contar con un dispositivo, 
+                  sea móvil, Tablet, computadora, una conexión a internet, finalmente para formar parte de click 
+                  online solo debes de crear una cuenta. </p>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="secciones">
+            <div class="container-fluid">
+                <h2 class="text-center titulos-secciones">Características principales</h2>
+                <div class="row justify-content-around">
+                    <div class="col-lg-4">
+                        <ul class="list-group">
+                            <li class="list-group-item"><ion-icon class="text-danger" name="remove"></ion-icon> Transmisión en directo</li>
+                            <li class="list-group-item"><ion-icon class="text-info" name="remove"></ion-icon> Reproductor compatible con el móvil</li>
+                            <li class="list-group-item"><ion-icon class="text-success" name="remove"></ion-icon> Chat en directo y Preguntas y respuestas</li>
+                            <li class="list-group-item"><ion-icon class="text-warning" name="remove"></ion-icon> Calidad del reproductor de servicio</li>
+                        </ul>                          
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="list-group">
+                            <li class="list-group-item"><ion-icon class="text-primary" name="remove"></ion-icon> Diversos cursos online</li>
+                            <li class="list-group-item"><ion-icon class="color-icon" name="remove"></ion-icon> Directos sin ningun costo</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="online" class="secciones">
+            <div class="container">
+                <h2 class="text-center titulos-secciones">¡Registrate Ahora!</h2>
+                <div class="row justify-content-around">
+                    <div class="col-lg-5 espacio-reponsivo">
+                      <p class="fw-bold text-center online-text">Online En Vivo</p>
+                          <ul class="list-group pt-3">
+                                <li class="list-group-item online-li"><ion-icon class="text-success" name="checkmark"></ion-icon> Sesiones Online en vivo con instructores expertos en la materia</li>
+                                <li class="list-group-item online-li"><ion-icon class="text-success" name="checkmark"></ion-icon> Fechas abiertas durante todo el año</li>
+                                <li class="list-group-item online-li"><ion-icon class="text-success" name="checkmark"></ion-icon> Visualiza tus live con mejor calidad</li>
+                                <li class="list-group-item online-li"><ion-icon class="text-success" name="checkmark"></ion-icon> Aprende de manera rapida y sencilla</li>
+                          </ul>                          
+                    </div>
+                    <div class="col-lg-5 d-flex justify-content-center">
+                      <div class="col-10">
+                        <form action="/registro" method="POST" class="registro-usuario">
+                          <div class="d-flex justify-content-end">
+                            <p class="">Nota: Todos los campos son requeridos</p> <span class="text-danger"> *</span>
+                          </div>
+                          <div class="mb-3">
+                            <label for="nameuser" class="form-label fw-bold">Nombre</label><span class="text-danger"> *</span>
+                            <input type="text" name="nombre" class="form-control mb-4" id="nameuser">
+                          </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label fw-bold">Correo Electronico</label><span class="text-danger"> *</span>
+                              <input type="email" name="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text fw-300">Ingresa un correo electronico valido</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label fw-bold">Contraseña</label><span class="text-danger"> *</span>
+                              <input type="password" name="contrasena" class="form-control mb-4" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn-inicio btn btn-success btn-lg form-control mb-5">Registrarme</button>
+                          </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       <!-- Modal -->
+        <div class="modal animate__animated animate__bounceInDown" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title fw-bold" id="staticBackdropLabel">Identifícate</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <div class="col-10">
+                    <form action="/login" method="POST" class="registro-usuario">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fw-bold pt-5">Correo Electronico</label>
+                        <input type="email" name="correo" class="form-control mb-4" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label fw-bold">Contraseña</label>
+                        <input type="password" name="contrasena" class="form-control mb-4" id="exampleInputPassword1">
+                      </div>
+                      <input type="submit" class="btn-inicio btn btn-dark btn-lg form-control mb-5" value="Ingresar"/>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

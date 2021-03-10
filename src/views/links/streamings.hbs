@@ -1,0 +1,81 @@
+{{!-- conferencias activas --}}
+
+<section class="site-perfil fondo-user pb-5">
+    <div class="contenedor contenido-header">
+        <div class="barra">
+            <h1 class="text-white titulo">¿Estas listo para aprender en línea?</h1>
+            <p class="text-inicio text-white">Click Online te ofrece la manera más sencilla de aprender, 
+                    solo necesitas crear una cuenta, un dispositivo, conexión a internet y es todo, ¿Qué estas esperando?</p>
+        </div>
+    </div>
+</section>
+
+<section id="live" class="py-5">
+    <div class="container py-5">
+         <h3 class="fw-bold py-5">Algunos temas que puedes encontrar <strong>{{ usuario.nombre }}</strong></h3>  
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card">
+                <div class="card-body">
+                    <p class="card-text text-center fw-bold">Programación</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                <div class="card-body">
+                    <p class="card-text text-center fw-bold">Diseño Web</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                <div class="card-body">
+                    <p class="card-text text-center fw-bold">Arquitectura</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                <div class="card-body">
+                    <p class="card-text text-center fw-bold">Administración</p>
+                </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <div class="container navbar-light bg-light my-5">
+        <div class="mensaje-perfil">
+            <div class="py-5">
+                <p class="text-dark fw-bold">Contamos con instructores capacitado para tu mejor entendimiento</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">   
+        <h3 class="fw-bold pt-5">Transmisiones en vívo ahora <ion-icon class="text-danger" name="radio-button-on"></ion-icon></h3>  
+        <div class="row py-5">
+            {{#each links}}
+            <div class="col-lg-3 p-2">
+            <div class="card border-primary mb-3">
+                <div class="card-header"><strong>{{ url }}</strong></div>
+                <div class="card-body">
+                    <a href="links/streaming">
+                        <h5 class="card-title text-dark">{{ titulo }}</h5>
+                    </a>       
+                    <p class="card-text">{{ descripcion }}</p>
+                    {{!-- <p class="card-text text-muted">Instructor: <strong>{{ usuario.nombre }}</strong></p> --}}
+                    <label class="text-muted pb-3">Tiempo publicado: <strong>{{timeago created_at}}</strong></label>
+                </div>
+            </div>
+            </div>
+            {{/each}}
+        </div>   
+    </div>
+</section>
+
+<section id="temas">
+    
+</section>
+
+

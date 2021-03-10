@@ -1,0 +1,57 @@
+<section id="perfil" class="py-5">
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-lg-2">
+                <div class="sidebar">
+                    <ul class="navbar-nav mb-2 mb-lg-0 py-5">
+                        <li class="nav-item py-2"><a class="nav-link perfil-link" href="#">Inicio</a></li>
+                        <li class="nav-item py-2"><a class="nav-link perfil-link" href="#">Perfil</a></li>
+                        <li class="nav-item py-2"><a class="nav-link perfil-link" href="#">Trasmisión</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <h2 class="text-muted py-5">Tu Perfil</h2>
+                <div class="profile-content">
+                    <div class="tab-content-wrapper">
+                        <div class="tab-content">
+                            <div class="container mx-auto">
+                                <form class="row g-3 user-perfil perfil-usuario">
+                                    <div class="col-md-5">
+                                        <label for="validationCustom01" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ usuario.nombre }}" required>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label for="validationCustomUsername" class="form-label">Correo Electronico</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            <input type="text" class="form-control" id="validationCustomUsername" value="{{ usuario.correo }}" aria-describedby="inputGroupPrepend" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label for="validationCustomUsername" class="form-label">Eres un: </label>
+                                        <div class="input-group has-validation">
+                                            <input type="text" class="form-control" id="validationCustomUsername" value="Estudiante" aria-describedby="inputGroupPrepend" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label for="cursos" class="form-label">Cursos Publicados</label>
+                                        <input type="text" class="form-control" id="cursos" value="0">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="descripcion" class="form-label">Descripción</label>
+                                        <textarea name="descripcion" class="form-control" rows="4">soy Estudiante de TIC</textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn-inicio btn btn-success" value="Editar">
+                                        <input type="submit" class="btn-inicio btn btn-danger" value="Eliminar">
+                                    </div>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

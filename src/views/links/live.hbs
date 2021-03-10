@@ -1,0 +1,33 @@
+<section id="live" class="py-5">
+    <div class="container">
+        <div class="navbar-light bg-light">
+            <div class="mensaje-perfil">
+                <div class="p-4">
+                    <p class="text-dark fw-bold">Bienvenido {{ usuario.nombre }}, Ahora te encuentras en Trasmisión</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <h2 class="fw-bold py-5">Estas en vivio Ahora <ion-icon class="text-danger" name="radio-button-on"></ion-icon></h2>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="envivo">
+                    <img src="/img/descarga.png" class=" mb-5">
+                    <button class="btn-inicio btn btn-danger">Finalizar streaming</button>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <label for="chat" class="title-chat fw-bold mb-3"><ion-icon name="chatbubble-outline"></ion-icon> Chat </label>
+                <ul class="navbar-nav bg-light">
+                    <li class="mb-3"><strong>{{usuario.nombre}}: </strong> Hola esto es una prueba de Trasmisión</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="fw-bold py-3 mt-5">Descripción</h2>
+        <p class="text-dark mb-5">Hola Bienvenido, te encuentras en el curso de programación en php, donde podras aprender
+            lo más relevante a programación.
+        </p>
+    </div>
+</section>
