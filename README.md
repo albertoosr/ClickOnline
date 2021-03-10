@@ -6,31 +6,18 @@ Dependencias del proyecto
 
 npm install for:
 
-*bcryptjs
-
-*connect-flash
-
-*express
-
-*express-handlebars
-
-*express-mysql-session
-
-*express-session
-
-*express-validator
-
-*morgan
-
-*mysql
-
-*passport
-
-*passport-local
-
-*timeago.js
-
-*timeagojs
+bcryptjs
+connect-flash
+express
+express-handlebars
+express-mysql-session
+express-session
+express-validator
+morgan
+mysql
+passport
+passport-local
+timeago.js
 
 # Depedencia de desarrollo 
 nodemon
