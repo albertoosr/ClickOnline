@@ -7,8 +7,11 @@ Dependencias del proyecto
 npm install for:
 
 bcryptjs
+
 connect-flash
+
 express
+
 express-handlebars
 express-mysql-session
 express-session
